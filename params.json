@@ -34,7 +34,8 @@
   "additionalDashboardUsers": {
     "users": []
   },
-  "tutorialProject": false,
+  "tutorialProject": true,
+  "tutorialId": "DKU_TUT_GEOJOIN",
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "flowDisplaySettings": {
@@ -152,7 +153,8 @@
     },
     "dkuProperties": []
   },
-  "name": "Geospatial Analysis: CC Fraud Data",
+  "name": "Geospatial Analysis: CC Fraud Data for josa.techlabs",
+  "projectStatus": "Sandbox",
   "imgPattern": 1,
   "showInitials": false,
   "metrics": {
@@ -210,11 +212,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 46,
     "lastModifiedBy": {
       "login": "josa.techlabs@gmail.com"
     },
-    "lastModifiedOn": 1681746787284
+    "lastModifiedOn": 1681746789445
   },
   "creationTag": {
     "versionNumber": 0,

@@ -19,6 +19,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "1",
+          "objectType": "ARTICLE"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -212,11 +221,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 46,
+    "versionNumber": 47,
     "lastModifiedBy": {
       "login": "josa.techlabs@gmail.com"
     },
-    "lastModifiedOn": 1681746789445
+    "lastModifiedOn": 1681747015494
   },
   "creationTag": {
     "versionNumber": 0,

@@ -1,0 +1,266 @@
+{
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "def": {
+        "animationDimension": [],
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "chartHeight": 200,
+        "colorMeasure": [],
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "colorPalette": "default",
+          "customColors": {},
+          "customPalette": {
+            "colors": [],
+            "fixedValues": false,
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "values": []
+          },
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5,
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "singleColor": "#2678B1",
+          "transparency": 0.75
+        },
+        "disableSafetyLimits": false,
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "facetDimension": [],
+        "fillOpacity": 0.6,
+        "filters": [
+          {
+            "allValuesInSample": false,
+            "column": "merchant_subsector_description",
+            "columnType": "ALPHANUM",
+            "excludeOtherValues": false,
+            "excludedValues": {
+              "___dku_no_value___": true,
+              "adult industry": true,
+              "advertising services": true,
+              "astrological services": true,
+              "automobiles": true,
+              "beauty & personal care": true,
+              "biotechnology": true,
+              "carpentry": true,
+              "consumer electronics": true,
+              "dental": true,
+              "education services": true,
+              "entertainment": true,
+              "financial services": true,
+              "flights": true,
+              "groceries": true,
+              "gym": true,
+              "health care services": true,
+              "health care technology": true,
+              "hotel": true,
+              "insurance": true,
+              "internet": true,
+              "liquor": true,
+              "luxury goods": true,
+              "magic cards": true,
+              "misc entertainment": true,
+              "news & journalism": true,
+              "office supplies": true,
+              "pharmaceuticals": true,
+              "phone bill": true,
+              "professional photography": true,
+              "real estate investments": true,
+              "real estate services": true,
+              "restaurant/dining": true,
+              "retail apparel": true,
+              "semiconductors": true,
+              "software": true,
+              "tobacco": true,
+              "utilities": true
+            },
+            "explicitExclude": false,
+            "filterType": "ALPHANUM_FACET",
+            "isA": "filter",
+            "isAGlobalFilter": false
+          }
+        ],
+        "genericDimension0": [
+          {
+            "column": "authorized_flag",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 100,
+            "numParams": {
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS",
+              "mode": "FIXED_NB",
+              "nbBins": 10
+            },
+            "oneTickPerBin": false,
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Count of records, descending",
+                "measureIdx": 0,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Count of records, ascending",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              }
+            ],
+            "sort": {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            "type": "NUMERICAL"
+          }
+        ],
+        "genericDimension1": [],
+        "genericMeasures": [
+          {
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "COUNT",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          }
+        ],
+        "geometry": [],
+        "groupDimension": [],
+        "hexbinNumber": 20,
+        "hexbinRadius": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "includeZero": true,
+        "legendPlacement": "OUTER_RIGHT",
+        "mapGridOptions": {
+          "gridLatDeg": 0.5,
+          "gridLonDeg": 0.5
+        },
+        "mapOptions": {
+          "lockSquareGrid": false,
+          "tilesLayer": "cartodb-positron"
+        },
+        "multiTooltips": false,
+        "name": "Count by authorized_flag",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "showInChartLabels": true,
+        "showInChartValues": false,
+        "showLegend": true,
+        "showXAxis": false,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "singleXAxis": true,
+        "sizeMeasure": [],
+        "smoothing": true,
+        "strokeWidth": 1,
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAnhJREFUeF7t188qRVEcxfGz/YmUwliYeRm5GTAw9ADCQPcRdAcoAzNTRZE/L2OGjFFKxLV1hdm5lsH5OUtf07Pae531OZRU8GO3wGTzbK7Iabms+GBuz160Gg+d58nu7ShcAPzPPwKAAeZPtPM3wG+ws57QHWBhJOcIwM56QneAhZGcIwA76wndARZGco4A7KwndAdYGMk5ArCzntAdYGEk5wjAznpCd4CFkZwjADvrCd0BFkZyjgDsrCd0B1gYyTkCsLOe0B1gYSTnCMDOekJ3gIWRnCMAO+sJ3QEWRnKOAOysJ3QHWBjJOQKws57QHWBhJOcIwM56QneAhZGcIwA76wndARZGco4A7KwndAdYGMk5ArCzntAdYGEk5wjAznpCd4CFkZwjADvrCd0BFkZyjgDsrCd0B1gYyTkCsLOe0B1gYSTnCMDOekJ3gIWRnCMAO+sJ3QEWRnKOAOysJ3QHWBjJOQKws57QHWBhJOcIwM56QneAhZGcIwA76wndARZGco4A7KwndAdYGMk5ArCzntAdYGEk50gI8PT6yfBT6j0qHSoXu1etmfLnzgv/cfdI4NMuwDsAV/MlAFzNrrU5FeDaUFRTBOBqdq3NqQDXhqKaIgBXs2ttTgW4NhTVFIkE3uvyb9L+179J46sHY91e9WZr4fbjec5pfO1wtCzbl/vfLrfn7jvP5TN/yPYMDOXrjZm7zpkTzfPRt+fHVHb/d89f3D+1cjzyml56Ss/cnL8rUsq/eadP4MWyMwdze+mi1XjoPC99mWq+PU6NXgDg6MWD7wM4ePDo6wCOXjz4PoCDB4++DuDoxYPvAzh48OjrAI5ePPi+dxYzqm/9W17xAAAAAElFTkSuQmCC",
+        "tooltipMeasures": [],
+        "type": "grouped_columns",
+        "uaColor": [],
+        "uaShape": [],
+        "uaSize": [],
+        "uaTooltip": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "useLiveProcessingIfAvailable": true,
+        "userEditedName": false,
+        "variant": "normal",
+        "xAxisMode": "NORMAL",
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xDimension": [],
+        "xMeasure": [],
+        "yAxisMode": "NORMAL",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "yDimension": [],
+        "yMeasure": []
+      },
+      "engineType": "LINO",
+      "maxDataBytes": 157286400
+    }
+  ],
+  "script": {
+    "analysisColumnData": {},
+    "coloring": {
+      "individualColumns": [],
+      "scheme": "MEANING_AND_STATUS",
+      "valueColoringMode": "HASH"
+    },
+    "columnWidthsByName": {},
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "explorationFilters": [],
+    "explorationSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxReadUncompressedBytes": -1,
+        "maxRecords": 10000,
+        "maxStoredBytes": 104857600,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02,
+        "timeout": -1,
+        "withinFirstN": -1
+      }
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "maxProcessedMemTableBytes": -1,
+    "previewMode": "ALL_ROWS",
+    "sorting": [],
+    "steps": [],
+    "vizSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false
+    }
+  }
+}

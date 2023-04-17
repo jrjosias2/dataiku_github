@@ -1,0 +1,28 @@
+{
+  "name": "Geo Join",
+  "color": "#F9BE40",
+  "items": [
+    {
+      "objectId": "gas_sector_merchants",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "gas_sector_unauth_transactions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_merchant_info_gas_sector_geopoints",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_transactions_gas_auth_geo",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

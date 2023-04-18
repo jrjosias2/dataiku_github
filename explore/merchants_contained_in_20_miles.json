@@ -211,8 +211,8 @@
           "numQuantizeSteps": 5,
           "paletteMiddleValue": 0.0,
           "customColors": {},
-          "heatDensityMapIntensity": 0.25,
-          "heatDensityMapRadius": 0.5
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.25
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,

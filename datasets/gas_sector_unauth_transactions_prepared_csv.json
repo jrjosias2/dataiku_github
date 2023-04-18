@@ -62,11 +62,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "josa.techlabs@gmail.com"
     },
-    "lastModifiedOn": 1681836353784
+    "lastModifiedOn": 1681836359449
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,7 +92,17 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"transaction_id","type":"bigint"},
+      {"name":"authorized_flag","type":"bigint","meaning":"Boolean"},
+      {"name":"merchant_id","type":"string"},
+      {"name":"purchase_amount","type":"double"},
+      {"name":"signature_provided","type":"bigint","meaning":"Boolean"},
+      {"name":"merchant_subsector_description","type":"string"},
+      {"name":"age","type":"bigint"},
+      {"name":"transaction_geopoint","type":"geopoint"},
+      {"name":"20_miles","type":"geometry"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],

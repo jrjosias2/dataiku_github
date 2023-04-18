@@ -28,8 +28,28 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointBufferProcessor",
+      "params": {
+        "outputColumn": "20_miles",
+        "shapeMode": "CIRCLE",
+        "width": 0.0,
+        "inputColumn": "transaction_geopoint",
+        "unitMode": "MILES",
+        "radius": 20.0,
+        "height": 0.0
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -62,7 +82,17 @@
       "meaning": "Boolean"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "transaction_id": 120,
+    "purchase_amount": 134,
+    "signature_provided": 150,
+    "transaction_geopoint": 190,
+    "merchant_id": 127,
+    "authorized_flag": 128,
+    "age": 100,
+    "20_miles": 100,
+    "merchant_subsector_description": 240
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

@@ -1,0 +1,56 @@
+{
+  "type": "geojoin",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "gas_sector_unauth_transactions_prepared_csv",
+          "deps": []
+        },
+        {
+          "ref": "gas_sector_merchants",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "merchants_contained_in_20_miles",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "josa.techlabs@gmail.com"
+    },
+    "lastModifiedOn": 1681836621297
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "josa.techlabs@gmail.com"
+    },
+    "lastModifiedOn": 1681836621297
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

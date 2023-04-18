@@ -62,11 +62,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "josa.techlabs@gmail.com"
     },
-    "lastModifiedOn": 1681836621294
+    "lastModifiedOn": 1681836755558
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,10 +100,8 @@
       {"name":"signature_provided","type":"bigint","meaning":"Boolean"},
       {"name":"merchant_subsector_description","type":"string"},
       {"name":"age","type":"bigint"},
-      {"name":"transaction_geopoint","type":"geopoint"},
       {"name":"20_miles","type":"geometry"},
       {"name":"merchant_category_id","type":"bigint"},
-      {"name":"subsector_description","type":"string"},
       {"name":"merchant_gas_geopoint","type":"geopoint"}
     ],
     "userModified": true

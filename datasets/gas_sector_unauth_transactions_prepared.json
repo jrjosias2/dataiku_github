@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "josa.techlabs@gmail.com"
     },
-    "lastModifiedOn": 1681836247226
+    "lastModifiedOn": 1681836267332
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,7 +76,7 @@
       {"name":"merchant_subsector_description","type":"string"},
       {"name":"age","type":"bigint"},
       {"name":"transaction_geopoint","type":"string"},
-      {"name":"20_miles","type":"string"}
+      {"name":"20_miles","type":"geometry"}
     ],
     "userModified": true
   },

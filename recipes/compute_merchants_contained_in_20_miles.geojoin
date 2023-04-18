@@ -5,56 +5,73 @@
       "table1": 0,
       "conditionsMode": "AND",
       "type": "LEFT",
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "20_miles",
+            "table": 0
+          },
+          "unit": "METER",
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "merchant_gas_geopoint",
+            "table": 1
+          },
+          "threshold": 100,
+          "type": "CONTAINS"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "transaction_id",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "authorized_flag",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "merchant_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "purchase_amount",
+      "type": "double",
       "table": 0
     },
     {
       "name": "signature_provided",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "merchant_subsector_description",
+      "type": "string",
       "table": 0
     },
     {
       "name": "age",
-      "table": 0
-    },
-    {
-      "name": "transaction_geopoint",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "20_miles",
+      "type": "geometry",
       "table": 0
     },
     {
       "name": "merchant_category_id",
-      "table": 1
-    },
-    {
-      "name": "subsector_description",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "merchant_gas_geopoint",
+      "type": "geopoint",
       "table": 1
     }
   ],
@@ -114,5 +131,57 @@
       "index": 1,
       "computedColumns": []
     }
-  ]
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "transaction_id",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "authorized_flag",
+            "type": "bigint"
+          },
+          {
+            "name": "merchant_id",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "double"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "signature_provided",
+            "type": "bigint"
+          },
+          {
+            "name": "merchant_subsector_description",
+            "type": "string"
+          },
+          {
+            "name": "age",
+            "type": "bigint"
+          },
+          {
+            "name": "20_miles",
+            "type": "geometry"
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "bigint"
+          },
+          {
+            "name": "merchant_gas_geopoint",
+            "type": "geopoint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  }
 }

@@ -34,7 +34,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoPointBufferProcessor",
@@ -46,6 +46,17 @@
         "unitMode": "MILES",
         "radius": 20.0,
         "height": 0.0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "geoMakeValid(20_miles)",
+        "column": "20_miles"
       },
       "alwaysShowComment": false
     }

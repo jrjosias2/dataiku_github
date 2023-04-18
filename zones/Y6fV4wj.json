@@ -25,6 +25,10 @@
     {
       "objectId": "compute_gas_sector_unauth_transactions_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "gas_sector_unauth_transactions_prepared_csv",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

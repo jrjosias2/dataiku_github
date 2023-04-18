@@ -64,7 +64,7 @@
     "main": {
       "items": [
         {
-          "ref": "gas_sector_unauth_transactions_prepared",
+          "ref": "gas_sector_unauth_transactions_prepared_csv",
           "appendMode": false
         }
       ]
@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "josa.techlabs@gmail.com"
     },
-    "lastModifiedOn": 1681836284654
+    "lastModifiedOn": 1681836359741
   },
   "creationTag": {
     "versionNumber": 0,

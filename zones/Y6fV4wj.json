@@ -17,6 +17,14 @@
     {
       "objectId": "compute_transactions_gas_auth_geo",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "gas_sector_unauth_transactions_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_gas_sector_unauth_transactions_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
